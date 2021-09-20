@@ -100,7 +100,7 @@ Governor Thomas Johnson High School - Frederick, MD
 
 Image: winterhawk.jpeg
 
-  </p>
+</p>
 
 </body>
 </html>
