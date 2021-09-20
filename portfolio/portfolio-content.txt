@@ -1,12 +1,4 @@
-<<<<<<< Updated upstream
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> jour352.gitbub.io </title>
-  </head>
-<body>
-<h1> Resume </h1>
-<p>
+
 WINTER HAWK
 
 
@@ -100,7 +92,3 @@ Governor Thomas Johnson High School - Frederick, MD
 
 Image: winterhawk.jpeg
 
-</p>
-
-</body>
-</html>
