@@ -1,10 +1,21 @@
+body{
+  font-family: "lora", serif;
+  width: 60%;
+  margin: auto;
+}
+
 h1 {
     color: #33485e;
+    text-align: center;
+    font-family: "open serif", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 img {
-    max-width: 600px;
+    /*max-width: 600px; */
     width: 100%;
+    margin: auto;
 }
 
 h2 {
@@ -12,4 +23,37 @@ h2 {
     color: white;
     font-weight: bold;
     padding: 5px 3px;
+    font-family: "open sans", sans-serif;
+}
+
+#tagline {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.span {
+  highlight: blue;
+  text-decoration-color: white;
+}
+
+.topper{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.topper p{
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.topper ul{
+  margin-left: 0;
+}
+
+.topper ul li{
+  display: inline-block;
 }
