@@ -14,8 +14,11 @@ h1 {
 
 img {
     /*max-width: 600px; */
-    width: 100%;
+    width: 25%;
     margin: auto;
+    float: right;
+    width: 250px;
+    padding-bottom: 150px;
 }
 
 h2 {
