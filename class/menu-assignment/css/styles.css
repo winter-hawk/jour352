@@ -1,1 +1,49 @@
 /* font-family: "Raleway", sans-serif; */
+.kitchen{
+  text-transform: uppercase;
+  color: gray;
+  font-weight: bold;
+}
+
+body{
+  font-family: "Raleway", sans-serif;
+}
+
+h2{
+  text-transform: uppercase;
+  color: #9bc2b7;
+}
+
+.intro {
+  color: #9bc2b7;
+}
+
+h3{
+  color: #b3070a;
+  text-transform: uppercase;
+}
+
+h6{
+  color: #b3070a;
+}
+
+.box{
+  box-shadow: 10px 10px 8px gray;
+}
+
+hr.line{
+  border-top: 2px dotted gray;
+}
+
+.add-ons{
+  color: gray;
+  font-style: italic;
+}
+
+.footer{
+  color: #9bc2b7;
+}
+
+.booking{
+  font-weight: bold;
+}
