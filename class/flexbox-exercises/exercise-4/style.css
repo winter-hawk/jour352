@@ -9,4 +9,6 @@ img:first-of-type {
 
 .container {
 	border: 5px solid #ffcc5c;
+	display: flex;
+	justify-content: space-between;
 }
