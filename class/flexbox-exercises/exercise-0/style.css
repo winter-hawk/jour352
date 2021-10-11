@@ -1,0 +1,69 @@
+.media-query-example-mobile,
+.media-query-example-desktop {
+	min-height: 300px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.media-query-example-mobile {
+		background-color: slategrey;
+	}
+
+	.media-query-example-mobile::before {
+		content: "extra small screens";
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.media-query-example-mobile {
+		background-color: #96ceb4;
+	}
+
+	.media-query-example-mobile::before {
+		content: "portrait tablets and large phones";
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.media-query-example-mobile {
+		background-color: #ff6f69;
+	}
+
+	.media-query-example-mobile::before {
+		content: "landscape tablets";
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.media-query-example-mobile {
+		background-color: #88a1d8;
+	}
+
+	.media-query-example-mobile::before {
+		content: "laptops";
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.media-query-example-mobile {
+		background-color: #476ea9;
+	}
+
+	.media-query-example-mobile::before {
+		content: "large laptops and desktops";
+	}
+}
+
+/* Extra large devices (large laptops and desktops, over 1200px) */
+
+/* Large devices (laptops/desktops, up to 1200px) */
+
+/* Medium devices (landscape tablets, 768px and up to 992px) */
+
+/* Small devices (portrait tablets and large phones, up to 768px) */
+
+/* Extra small devices (phones, 600px and down) */

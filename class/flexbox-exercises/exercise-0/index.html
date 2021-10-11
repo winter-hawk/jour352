@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>Media queries</title>
+        <meta name="description" content="Examples to follow for learning Flexbox.">
+    </head>
+    <body>
+        <div class="instruction">
+            <h1>Media queries</h1>
+            <p>Media queries are useful when you want to modify your site or app depending on a device's general type (like screen) or specific characteristics and parameters (such as screen resolution or browser viewport width).</p>
+
+            <h3>Primary media features</h3>
+            <ul>
+                <li><strong>aspect-ratio</strong>: Width-to-height aspect ratio of the viewport</li>
+                <li><strong>height</strong>: Height of the viewport</li>
+                <li><strong>orientation</strong>: Orientation of the viewport</li>
+                <li><strong>resolution</strong>: Pixel density of the output device</li>
+                <li><strong>width</strong>: Width of the viewport including width of scrollbar</li>
+            </ul>
+            <p>For a full list, go <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#media_features">here</a>.</p>
+            <p>Logical operators are used to create media queries. The logical operators not, and, and only can be used to compose a complex media query. You can also combine multiple media queries into a single rule by separating them with commas.</p>
+            <ul>
+                <li><strong>and</strong>: The and operator is used for combining multiple media features together into a single media query, requiring each chained feature to return true for the query to be true. It is also used for joining media features with media types.</li>
+                <li><strong>not</strong>: The not operator is used to negate a media query, returning true if the query would otherwise return false. If present in a comma-separated list of queries, it will only negate the specific query to which it is applied. If you use the not operator, you must also specify a media type.</li>
+                <li><strong>only</strong>: The only operator is used to apply a style only if an entire query matches, and is useful for preventing older browsers from applying selected styles. When not using only, older browsers would interpret the query screen and (max-width: 500px) as screen, ignoring the remainder of the query, and applying its styles on all screens. If you use the only operator, you must also specify a media type.</li>
+                <li><strong>, (comma)</strong>: Commas are used to combine multiple media queries into a single rule. Each query in a comma-separated list is treated separately from the others. Thus, if any of the queries in a list is true, the entire media statement returns true. In other words, lists behave like a logical or operator.</li>
+            </ul>
+
+            <h3>Targeting media features</h3>
+            <p>Media features describe the specific characteristics of a given output device or environment. For instance, you can apply specific styles to widescreen monitors, computers that use mice, or to devices that are being used in low-light conditions.</p>
+            <p>Many media features are range features, which means they can be prefixed with "min-" or "max-" to express "minimum condition" or "maximum condition" constraints. For example, this CSS will apply styles only if your browser's viewport width is equal to or narrower than 767px:</p>
+            <pre><code>@media (max-width: 767px) { ... }</code></pre>
+
+            <h3>Creating more complete media features</h3>
+            <p>The and keyword combines a media feature with a media type or other media features. This example restricts styles to within the limits: 768px to 959px:</p>
+            <pre><code>@media only screen and (min-width: 768px) and (max-width: 959px) { }</code></pre>
+
+            <p class="media-query-text">Write a media query that changes the text color of this text <strong>only</strong> on screens between 600px and 786px.</p>
+
+            <p>Here are some standard breakpoints:</p>
+            <pre><code>
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {...}
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {...}
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {...}
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {...}
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {...}
+            </code></pre>
+
+            <h3>Using min-width and max-width for CSS breakpoints</h3>
+            <p>A good rule to follow in this regard is to add a breakpoint when the content looks misaligned. When designing with the mobile-first approach (shown in the standard breakpoints above), start with setting min-width breakpoints. The default styles should be for smaller device screens. Then, add and adjust for larger screens. Conversely, when designing for larger devices, set default CSS for them, and realign for smaller screens with the max-width property.</p>
+            <h3>Mobile-first approach</h3>
+            <div class="media-query-example-mobile"></div>
+            <h3>Desktop-first approach</h3>
+            <!-- Use the CSS to create the desktop-first version of the same media queries -->
+            <div class="media-query-example-desktop"></div>
+        </div>
+    </body>
+</html>
