@@ -1,0 +1,73 @@
+.container > div {
+	padding: 10px;
+	text-align: center;
+	font-size: 2em;
+	color: #ffeead;
+}
+
+html,
+body {
+	background-color: #f9f2dc;
+	margin: 10px;
+	font-family: "Andada Pro", serif;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto 50px;
+}
+
+.instruction {
+	margin-bottom: 100px;
+	display: block;
+	clear: both;
+	height: auto;
+}
+
+.instruction p {
+	line-height: 1.6;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+code {
+	background-color: rgb(228, 228, 228);
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid slategrey;
+}
+
+.container > div:nth-child(3),
+.container > div:nth-child(6) {
+	background-color: #96ceb4;
+}
+
+.container > div:nth-child(1),
+.container > div:nth-child(4) {
+	background-color: #ff6f69;
+}
+
+.container > div:nth-child(2),
+.container > div:nth-child(5) {
+	background-color: #88a1d8;
+}
+
+sup {
+	padding: 5px;
+	margin-right: 5px;
+	font-size: small;
+}
+
+sup.parent {
+	background-color: #476ea9;
+	color: white;
+}
+
+sup.child {
+	background-color: #8347a9;
+	color: white;
+}

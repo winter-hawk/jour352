@@ -1,0 +1,7 @@
+A guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Learn flexbox tutorial (requires sign up): https://scrimba.com/learn/flexbox
+
+Using media queries: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
+Flexbox navigation examples: https://bashooka.com/coding/responsive-flexbox-navigation-menu-examples/
