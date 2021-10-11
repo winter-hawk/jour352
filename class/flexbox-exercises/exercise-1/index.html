@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>Flexbox Example 1: Your first flexbox grid</title>
+        <meta name="description" content="Examples to follow for learning Flexbox.">
+    </head>
+    <body>
+        <div class="instruction">
+            <h1><sup class="parent">Parent</sup>The flexbox container</h1>
+            <p>To implement flexbox, you first need to have a container in you HTML file. Then, in CSS, you need to use <code>display: flex;</code> <strong>on the container</strong> to define it as using Flexbox. It enables a flex context for all its direct children. You can also use <code>display: inline-flex;</code> if you want the <strong>container</strong> to display inline (it does not alter how the elements <i>inside</i> the container are displayed).</p>
+            <p>A note for later: You can and will need to define flexbox attributes on either the <strong>container or the items within</strong>. This attribute is on the container itself — known as the parent, despite it modifying the display of the items — known as the children — within.</p>
+        </div>
+        <nav class="container">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </body>
+</html>
