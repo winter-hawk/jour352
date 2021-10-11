@@ -13,7 +13,14 @@ img:first-of-type {
 	flex-direction: column;
 }
 
+@media only screen and (min-width:600px) {
+	.container{
+		flex-direction: column;
+	}
+}
+
 .container div {
+	flex-grow: 1;
 }
 
 /* Reorder the divs to match the picture */
@@ -21,7 +28,14 @@ img:first-of-type {
 }
 
 .container div:nth-of-type(2) {
+	order: -1;
 }
 
 .container div:nth-of-type(3) {
+}
+
+@media only screen and (min-width:600px) {
+	.container{
+		flex-direction: row;
+	}
 }
