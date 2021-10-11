@@ -14,4 +14,7 @@ img:first-of-type {
 .container {
 	border: 5px solid #ffcc5c;
 	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
