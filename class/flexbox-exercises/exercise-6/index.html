@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>Flexbox Example 6: Order, flex-grow and flex-basis</title>
+        <meta name="description" content="Examples to follow for learning Flexbox.">
+    </head>
+    <body>
+        <div class="instruction">
+            <h1><sup class="child">Children</sup>Order, flex-grow and flex-basis</h1>
+            <h3>Order</h3>
+            <p>By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container. To define an item's order, use <code>order: 5; /* default is 0 */</code> on the <strong>child element</strong>. You can use negative numbers with order</p>
+            
+            <h3>Flex-grow</h3>
+            <p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up. Use: <code>flex-grow: 4; /* default 0 */</code>.</p>
+
+            <p>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).</p>
+
+            <p>Negative numbers are invalid for the value or flex-grow.</p>
+
+            <h3>Flex-basis</h3>
+            <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property." Use the code: <code>flex-basis:  | auto; /* default auto */</code>.</p>
+            <p>If set to 0, the extra space around content isn’t factored in. If set to auto, the extra space is distributed based on its flex-grow value. See <a href="https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg">this graphic</a>.</p>
+
+            <p>So when is this useful? When you're making layouts for different screensizes, you might want to reorder items within a container like in the example below.</p>
+            <img src="https://i.stack.imgur.com/LgqB6.jpg" alt="align items row">
+        </div>
+        <p>Use media queries and a combination of these CSS properties to match the picture.</p>
+        <nav class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </nav>
+    </body>
+</html>
