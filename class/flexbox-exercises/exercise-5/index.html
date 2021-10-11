@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>Flexbox Example 5: Align items</title>
+        <meta name="description" content="Examples to follow for learning Flexbox.">
+    </head>
+    <body>
+        <div class="instruction">
+            <h1><sup class="parent">Parent</sup>Align items</h1>
+            <p>TThis defines the default behavior for how flex items are laid out along the <strong>cross axis</strong> on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis). To define, use: <code>align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end;</code></p>
+            <ul>
+                <li><strong>stretch (default)</strong>: stretch to fill the container (still respect min-width/max-width)</li>
+                <li><strong>flex-start / start / self-start</strong>: items are placed at the start of the cross axis. The difference between these is subtle, and is about respecting the flex-direction rules or the writing-mode rules.</li>
+                <li><strong>flex-end / end / self-end</strong>: items are placed at the end of the cross axis. The difference again is subtle and is about respecting flex-direction rules vs. writing-mode rules.</li>
+                <li><strong>center</strong>: items are centered in the cross-axis</li>
+                <li><strong>baseline</strong>: items are aligned such as their baselines align</li>
+            </ul>
+            <img src="https://samanthaming.gumlet.io/flexbox30/15-align-items-row.jpg.gz" alt="align items row">
+            <img src="https://samanthaming.gumlet.io/flexbox30/17-align-items-column.jpg.gz" alt="align items col">
+        </div>
+        <nav class="container">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </body>
+</html>

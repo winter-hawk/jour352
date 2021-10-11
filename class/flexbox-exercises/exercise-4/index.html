@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>Flexbox Example 4: Justify content</title>
+        <meta name="description" content="Examples to follow for learning Flexbox.">
+    </head>
+    <body>
+        <div class="instruction">
+            <h1><sup class="parent">Parent</sup>Justify content</h1>
+            <p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. To define, use: <code>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right;</code></p>
+            <ul>
+                <li><strong>flex-start (default)</strong>: items are packed toward the start of the flex-direction.</li>
+                <li><strong>flex-end</strong>: items are packed toward the end of the flex-direction.</li>
+                <li><strong>start</strong>: items are packed toward the start of the writing-mode direction.</li>
+                <li><strong>end</strong>: items are packed toward the end of the writing-mode direction.</li>
+                <li><strong>left</strong>: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.</li>
+                <li><strong>right</strong>: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end.</li>
+                <li><strong>center</strong>: items are centered along the line</li>
+                <li><strong>space-between</strong>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
+                <li><strong>space-around</strong>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
+                <li><strong>space-evenly</strong>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
+            </ul>
+            <p>Note: Browser support for these values is nuanced. For example, space-between never got support from some versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN has detailed charts. The safest values are flex-start, flex-end, and center.</p>
+            
+            <img src="https://samanthaming.gumlet.io/flexbox30/12-justify-content-row.jpg.gz" alt="jusitfy content">
+            <img src="https://samanthaming.gumlet.io/flexbox30/13-justify-content-column.jpg.gz" alt="justify-content col">
+        </div>
+        <nav class="container">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </body>
+</html>
