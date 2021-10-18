@@ -33,5 +33,4 @@ margin: 5px;
 .orange div{
   background-color: #E76E34;
   flex-grow: 0.3;
-  align-self: right;
 }
