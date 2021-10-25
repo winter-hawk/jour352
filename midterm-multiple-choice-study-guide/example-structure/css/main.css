@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+}
+
+.slategray { 
+    background-color: #264653;
+    color: #264653;
+}
+
+.teal {
+    background-color: #2A9D8F;
+    color: #2A9D8F;
+}
+
+.mustard {
+    background-color: #E9C46A;
+    color: #E9C46A;
+}
+
+.orange {
+    background-color: #F4A261;
+    color: #F4A261;
+}
+
+.rust {
+    background-color: #E76F51;
+    color: #E76F51;
+}
